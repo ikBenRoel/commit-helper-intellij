@@ -9,7 +9,7 @@ import io.github.meteulken.commithelper.CommitCore
 
 object GeminiSpec : ProviderSpec {
     override val name: String = "Gemini"
-    private const val MODEL = "gemini-2.0-flash"
+    private const val MODEL = "gemini-2.5-flash-lite"
     private const val ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/$MODEL:generateContent"
 
     override fun buildRequest(apiKey: String, prompt: String, temperature: Double): Request {
